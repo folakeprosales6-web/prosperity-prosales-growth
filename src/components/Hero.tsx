@@ -81,11 +81,11 @@ const Hero = () => {
   }, [api]);
 
   return (
-    <section id="home" className="relative h-screen">
-      <Carousel setApi={setApi} className="w-full h-full">
-        <CarouselContent className="h-full">
+    <section id="home" className="relative min-h-[120vh]">
+      <Carousel setApi={setApi} className="w-full min-h-[120vh]">
+        <CarouselContent className="min-h-[120vh]">
           {heroSlides.map((slide, index) => (
-            <CarouselItem key={index} className="relative h-full">
+            <CarouselItem key={index} className="relative min-h-[120vh]">
               {/* Background Image for this slide */}
               <div className="absolute inset-0 z-0">
                 <img 
