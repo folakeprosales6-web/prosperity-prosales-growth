@@ -81,25 +81,25 @@ const Hero = () => {
   }, [api]);
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center">
-      <div className="container relative z-10">
-        <Carousel setApi={setApi} className="w-full max-w-4xl">
-          <CarouselContent>
-            {heroSlides.map((slide, index) => (
-              <CarouselItem key={index} className="relative">
-                {/* Background Image for this slide */}
-                <div className="absolute inset-0 z-0 rounded-lg overflow-hidden">
-                  <img 
-                    src={slide.image} 
-                    alt={slide.alt} 
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-black/50"></div>
-                </div>
+    <section id="home" className="relative h-screen">
+      <Carousel setApi={setApi} className="w-full h-full">
+        <CarouselContent className="h-full">
+          {heroSlides.map((slide, index) => (
+            <CarouselItem key={index} className="relative h-full">
+              {/* Background Image for this slide */}
+              <div className="absolute inset-0 z-0">
+                <img 
+                  src={slide.image} 
+                  alt={slide.alt} 
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-black/50"></div>
+              </div>
 
-                {/* Content */}
-                <div className="relative z-10 min-h-screen flex items-center">
-                  <div className="max-w-4xl p-8">
+              {/* Content */}
+              <div className="relative z-10 h-full flex items-center">
+                <div className="container mx-auto px-8">
+                  <div className="max-w-4xl">
                     <h1 className="text-5xl md:text-7xl font-bold text-white mb-8 leading-tight">
                       {slide.title}
                     </h1>
@@ -129,25 +129,25 @@ const Hero = () => {
                     </div>
                   </div>
                 </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious className="left-4 text-white border-white hover:bg-white hover:text-black" />
-          <CarouselNext className="right-4 text-white border-white hover:bg-white hover:text-black" />
-        </Carousel>
-
-        {/* Slide indicators */}
-        <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 flex justify-center gap-2 z-20">
-          {Array.from({ length: count }).map((_, index) => (
-            <button
-              key={index}
-              className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                index === current - 1 ? "bg-white" : "bg-white/30"
-              }`}
-              onClick={() => api?.scrollTo(index)}
-            />
+              </div>
+            </CarouselItem>
           ))}
-        </div>
+        </CarouselContent>
+        <CarouselPrevious className="left-4 text-white border-white hover:bg-white hover:text-black" />
+        <CarouselNext className="right-4 text-white border-white hover:bg-white hover:text-black" />
+      </Carousel>
+
+      {/* Slide indicators */}
+      <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 flex justify-center gap-2 z-20">
+        {Array.from({ length: count }).map((_, index) => (
+          <button
+            key={index}
+            className={`w-3 h-3 rounded-full transition-all duration-300 ${
+              index === current - 1 ? "bg-white" : "bg-white/30"
+            }`}
+            onClick={() => api?.scrollTo(index)}
+          />
+        ))}
       </div>
 
       {/* Scroll Indicator */}
