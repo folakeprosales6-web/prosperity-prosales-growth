@@ -16,7 +16,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="md:col-span-2">
-            <h3 className="text-2xl font-bold mb-4">Prosperity 'Prosales</h3>
+            <h3 className="text-2xl font-bold mb-4">Prosperity Prosales</h3>
             <p className="mb-6 leading-relaxed opacity-90">
               Your trusted partner in digital marketing success. We help businesses grow their 
               online presence through proven strategies and innovative solutions.
@@ -122,7 +122,7 @@ const Footer = () => {
         <div className="border-t border-primary-foreground/20 mt-12 pt-8">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <p className="opacity-80">
-              © {currentYear} Prosperity 'Prosales. All rights reserved.
+              © {currentYear} Prosperity Prosales. All rights reserved.
             </p>
             
             <div className="mt-4 md:mt-0">

@@ -3,11 +3,11 @@ const About = () => {
     <section id="about" className="section">
       <div className="container">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8">About Prosperity 'Prosales</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-8">About Prosperity Prosales</h2>
           
           <div className="text-lg md:text-xl text-muted-foreground mb-12 leading-relaxed">
             <p className="mb-6">
-              For over 5 years, Prosperity 'Prosales has been at the forefront of digital transformation, 
+              For over 5 years, Prosperity Prosales has been at the forefront of digital transformation, 
               helping businesses across various industries achieve unprecedented online growth. Our mission 
               is simple yet powerful: to empower brands with cutting-edge digital marketing strategies 
               that drive real, measurable results.

@@ -18,8 +18,15 @@ const Header = () => {
       <div className="container">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <div className="font-bold text-2xl text-primary">
-            Prosperity 'Prosales
+          <div className="flex items-center space-x-3">
+            <img 
+              src="/lovable-uploads/prosperity-logo.png" 
+              alt="Prosperity Prosales Logo" 
+              className="h-12 w-12"
+            />
+            <div className="font-bold text-2xl text-primary">
+              Prosperity Prosales
+            </div>
           </div>
 
           {/* Desktop Navigation */}

@@ -33,7 +33,7 @@ const WhyChooseUs = () => {
     <section className="section">
       <div className="container">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Why Choose Prosperity 'Prosales</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">Why Choose Prosperity Prosales</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             We combine industry expertise with personalized service to deliver digital marketing 
             solutions that drive real business growth and sustainable success.
