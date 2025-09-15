@@ -68,14 +68,14 @@ const Hero = () => {
       setCurrent(api.selectedScrollSnap() + 1);
     });
 
-    // Auto-scroll every 5 seconds
+    // Auto-scroll every 8 seconds
     const interval = setInterval(() => {
       if (api.canScrollNext()) {
         api.scrollNext();
       } else {
         api.scrollTo(0);
       }
-    }, 5000);
+    }, 8000);
 
     return () => clearInterval(interval);
   }, [api]);
